@@ -7,7 +7,7 @@ f = open("data/traindata.txt", "r")
 xstr = f.read()
 x = xstr.splitlines()
 x_vals_list = []
-for i in range(math.floor(len(x)/1000)):
+for i in range(len(x)):
     xArr = x[i].split(",")
     tempArr = np.zeros(len(xArr))
     for j in range(len(xArr)):
@@ -19,7 +19,7 @@ f = open("data/trainlabels.txt", "r")
 ystr = f.read()
 y = ystr.splitlines()
 y_vals_list = []
-for i in range(math.floor(len(x)/1000)):
+for i in range(len(x)):
     yArr = y[i].split(",")
     tempArr = np.zeros(len(yArr))
     y_vals_list.append(int(yArr[0]))
