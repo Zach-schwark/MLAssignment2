@@ -7,27 +7,59 @@ import preprocessing as myData
 (x_test, y_test) = myData.getTestingData()
 print(len(x_train[0]))
 
-#model structure
+
 modelStructure = [71,50,30,10]
 activationFunction = "relu"
-
-model = tf.keras.models.Sequential([
-    tf.keras.layers.InputLayer(modelStructure[0]),
-    tf.keras.layers.Dense(modelStructure[1], activation= activationFunction),
-    tf.keras.layers.Dense(modelStructure[2], activation= activationFunction),
-    tf.keras.layers.Dense(modelStructure[3], activation= activationFunction)
-])
-
-predictions = model(x_train[:1]).numpy()
-predictions
-tf.nn.softmax(predictions).numpy()
+numEpochs = 5
+learningRate = 0.1
+regularization = 0.1
+optimizer = tf.keras.optimizers.SGD(learning_rate=learningRate)
 loss_fn = tf.keras.losses.LogCosh(reduction=tf.keras.losses.Reduction.SUM)
+
+#setting up model
+layers = [tf.keras.layers.InputLayer(modelStructure[0]),]
+for i in range(1, len(modelStructure)):
+        layers.append(tf.keras.layers.Dense(modelStructure[i], activation= activationFunction, bias_initializer= "ones",activity_regularizer=tf.keras.regularizers.L1(regularization)))
+        
+                
+#initilizing model
+model = tf.keras.models.Sequential(layers)
+
+#gets predictions of untrained model/ first forward propagate
+predictions = model(x_train[:1]).numpy()
+
+
+#normalizing out put, to get ptedictions as probabilities
+tf.nn.softmax(predictions).numpy()
+
+
+#calculate last layers error/ final error
 loss_fn(y_train[:1], predictions).numpy()
-model.compile(optimizer='adam',
+
+
+# "backpropogates" and compiles model with deltas annd gradeints etc....sets this stuffup for training
+model.compile(optimizer= optimizer,
               loss=loss_fn,
               metrics=['accuracy'])
-history = model.fit(x_train, y_train, epochs=50)
+
+
+# trains the model on training data
+history = model.fit(x_train, y_train, epochs=numEpochs)
+
+# evaluates and validates model on validation data
 model.evaluate(x_validation,  y_validation, verbose=2)
+
+# evaluates on testing data
+#model.evaluate(x_validation,  y_validation, verbose=2)
+
+
+
+
+
+
+
+
+
 
 #things to consider changing to optimise
 
@@ -36,3 +68,9 @@ model.evaluate(x_validation,  y_validation, verbose=2)
 # activation function
 # loss function 
 # how outputted
+
+# change stuff using validating
+# final test usingg testing 
+
+
+# research into dropout
