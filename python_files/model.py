@@ -10,6 +10,13 @@ f.write("")
 f.close()
 
 
+
+
+
+
+
+
+
 # research into dropout
 LR_arr = [0.1, 0.15, 0.2, 0.25]
 Reg_arr = [0.01, 0.03, 0.06, 0.09]
