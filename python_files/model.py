@@ -17,7 +17,7 @@ optimizer = tf.keras.optimizers.SGD(learning_rate=learningRate)
 loss_fn = tf.keras.losses.LogCosh(reduction=tf.keras.losses.Reduction.SUM)
 
 #setting up model
-layers = [tf.keras.layers.InputLayer(modelStructure[0]),]
+layers = [tf.keras.layers.InputLayer(input_shape=(modelStructure[0],))]
 for i in range(1, len(modelStructure)):
         layers.append(tf.keras.layers.Dense(modelStructure[i], activation= activationFunction, bias_initializer= "ones",activity_regularizer=tf.keras.regularizers.L1(regularization)))
         
