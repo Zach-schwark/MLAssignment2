@@ -8,8 +8,8 @@ import preprocessing as myData
 print(len(x_train[0]))
 
 
-modelStructure = [71,50,30,10]
-activationFunction = "relu"
+modelStructure = [71,71,10]
+activationFunction = "sigmoid"
 numEpochs = 5
 learningRate = 0.1
 regularization = 0.1
@@ -30,7 +30,7 @@ predictions = model(x_train[:1]).numpy()
 
 
 #normalizing out put, to get ptedictions as probabilities
-tf.nn.softmax(predictions).numpy()
+predictions = tf.nn.softmax(predictions).numpy()
 
 
 #calculate last layers error/ final error
@@ -49,15 +49,22 @@ history = model.fit(x_train, y_train, epochs=numEpochs)
 # evaluates and validates model on validation data
 model.evaluate(x_validation,  y_validation, verbose=2)
 
+#predictions_test = model.predict_on_batch(x_test)
+#predictions_test = tf.nn.softmax(predictions_test).numpy()
+#predictions_final = np.zeros(len(predictions_test), dtype=int)
+#for i in range(len(predictions_test)):
+#        #print(np.where(predictions_test[i]==max(predictions_test[i])))
+#        if(len(np.where(predictions_test[i]==max(predictions_test[i])))>1):
+#                predictions_final[i]=int(np.where(predictions_test[i]==max(predictions_test[i]))[0][0])
+#        else:
+#                #print(np.where(predictions_test[i]==max(predictions_test[i]))[0])
+#                predictions_final[i]=int(np.where(predictions_test[i]==max(predictions_test[i]))[0])
+#print(predictions_final)
+
 # evaluates on testing data
 #model.evaluate(x_validation,  y_validation, verbose=2)
 
-
-
-
-
-
-
+model.save(filepath = "model.h5" ,save_format='h5')
 
 
 
