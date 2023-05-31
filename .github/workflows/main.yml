@@ -15,4 +15,4 @@ jobs:
     - name: Starting the apptainer container
       run: apptainer instance start rail.sif rail
     - name: Run classifyall script
-      run: apptainer exec instance://rail python python_files/classifyall.py
+      run: apptainer exec instance://rail python -c 'import tensorflow as tf; print(tf.__version__)' python python_files/classifyall.py
