@@ -63,8 +63,8 @@ model.evaluate(x_validation,  y_validation, verbose=2)
 
 # evaluates on testing data
 #model.evaluate(x_validation,  y_validation, verbose=2)
-
-model.save(filepath = "model.h5" ,save_format='h5')
+config = model.get_config()
+model.save(filepath = "model")
 
 
 

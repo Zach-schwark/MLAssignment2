@@ -9,7 +9,7 @@ import preprocessing as myData
 # writes predicted lables top file testlables.txt
 
 # load model 
-model = tf.keras.models.load_model('model.h5')
+model = tf.keras.models.load_model('model',compile=False)
 
 # check model info 
 #model.summary()
