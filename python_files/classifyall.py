@@ -9,7 +9,8 @@ import preprocessing as myData
 # writes predicted lables top file testlables.txt
 
 # load model 
-model = tf.keras.models.load_model('model',compile=False)
+model = tf.keras.models.load_model('model.keras',compile=False)
+#tf.saved_model.LoadOptions()
 
 # check model info 
 #model.summary()
@@ -44,7 +45,7 @@ for i in range(len(predictions)):
         else:
                 #print("hi")
                 predictions_final[i]=int(np.where(predictions[i]==max(predictions[i]))[0])
-#print(str(predictions_final))
+print(str(predictions_final))
 #print(len(predictions[0]))
 f = open("testlabels.txt", "w")
 for i in range(len(predictions_final)):

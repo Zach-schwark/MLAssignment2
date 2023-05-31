@@ -64,7 +64,7 @@ model.evaluate(x_validation,  y_validation, verbose=2)
 # evaluates on testing data
 #model.evaluate(x_validation,  y_validation, verbose=2)
 config = model.get_config()
-model.save(filepath = "model")
+model.save(filepath = "model.keras",save_format='tf')
 
 
 
