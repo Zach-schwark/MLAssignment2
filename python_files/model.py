@@ -6,7 +6,7 @@ import preprocessing as myData
 (x_validation, y_validation) = myData.getValidationData()
 (x_test, y_test) = myData.getTestingData()
 print(len(x_train[0]))
-
+print(tf.__version__)
 
 modelStructure = [71,71,10]
 activationFunction = "sigmoid"
