@@ -1,7 +1,7 @@
 import tensorflow as tf
 import numpy as np
 import preprocessing as myData
-from sklearn.decomposition import PCA
+#from sklearn.decomposition import PCA
 
 (x_train, y_train) = myData.getTrainingData()
 (x_validation, y_validation) = myData.getValidationData()
