@@ -37,11 +37,19 @@ eigenvalues, eigenvectors = np.linalg.eig(covariance_matrix)
 indices = np.argsort(eigenvalues)[::-1]
 sorted_eigenvalues = list(map(eigenvalues.__getitem__, indices))
 sorted_eigenvectors = list(map(eigenvectors.T.__getitem__, indices))
-#print(np.shape(sorted_eigenvectors[0]))
-principal_components = np.dot(np.transpose(normalized_features) ,sorted_eigenvectors[0])
+print(np.size(sorted_eigenvectors))
 variance_explained = [i/sum(sorted_eigenvalues) for i in sorted_eigenvalues]
+percent=0
+count=0
+while(percent<=0.80):
+    percent+=variance_explained[count]
+    count+=1
+print(count)
 
-#print(np.shape(principal_components))
+principal_components = np.dot(np.transpose(normalized_features), sorted_eigenvectors)
+
+
+print(np.shape(principal_components))
 #print(np.shape(normalized_features))
 print(variance_explained)
 
