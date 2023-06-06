@@ -9,7 +9,7 @@ from sklearn.decomposition import PCA
 f = open("evaluation.txt", "w")
 f.write("")
 f.close()
-
+# second iteration 
 pca = PCA(0.9)
 pca.fit(x_train)
 print(pca.n_components_)
