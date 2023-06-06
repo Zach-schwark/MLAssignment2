@@ -1,0 +1,394 @@
+ Hyper Parameters:
+ modelStructure =70
+ activationFunction = tanh
+ numEpochs = 10
+ learningRate =0.1
+ regularization = 0.03
+loss=96.03678894042969	 accuracy= 0.11800000071525574
+
+ Hyper Parameters:
+ modelStructure =70
+ activationFunction = sigmoid
+ numEpochs = 10
+ learningRate =0.2
+ regularization = 0.01
+loss=95.48585510253906	 accuracy= 0.11749999970197678
+
+Hyper Parameters:
+ modelStructure =54
+ activationFunction = tanh
+ numEpochs = 10
+ learningRate =0.25
+ regularization = 0.03
+loss=96.34254455566406	 accuracy= 0.11699999868869781
+
+ Hyper Parameters:
+ modelStructure =70
+ activationFunction = relu
+ numEpochs = 15
+ learningRate =0.15
+ regularization = 0.01
+loss=59.36955261230469	 accuracy= 0.11699999868869781
+
+Hyper Parameters:
+ modelStructure =20
+ activationFunction = sigmoid
+ numEpochs = 15
+ learningRate =0.1
+ regularization = 0.09
+loss=96.3662109375	 accuracy= 0.11699999868869781
+
+Hyper Parameters:
+ modelStructure =70
+ activationFunction = tanh
+ numEpochs = 20
+ learningRate =0.1
+ regularization = 0.06
+loss=96.83821868896484	 accuracy= 0.1185000017285347
+
+
+Hyper Parameters:
+ modelStructure =70
+ activationFunction = relu
+ numEpochs = 25
+ learningRate =0.15
+ regularization = 0.09
+loss=62.230499267578125	 accuracy= 0.11999999731779099
+
+Hyper Parameters:
+ modelStructure =20
+ activationFunction = sigmoid
+ numEpochs = 25
+ learningRate =0.25
+ regularization = 0.01
+loss=95.4469985961914	 accuracy= 0.11999999731779099
+
+ Hyper Parameters:
+ modelStructure =70
+ activationFunction = relu
+ numEpochs = 25
+ learningRate =0.15
+ regularization = 0.09
+loss=62.230499267578125	 accuracy= 0.11999999731779099
+
+
+
+ Hyper Parameters:
+ modelStructure =54
+ activationFunction = relu
+ numEpochs = 25
+ learningRate =0.2
+ regularization = 0.09
+loss=63.83522415161133	 accuracy= 0.11649999767541885
+
+
+
+structure : 70
+relu=4
+tanh=3
+sigmoid =3
+0.1=3
+0.15=3
+
+0.03=2
+0.01=3
+0.09=4
+0.06=1
+
+///////////////////////////
+
+90%
+
+/////////////////
+
+ Hyper Parameters:
+ modelStructure =70
+ activationFunction = relu
+ numEpochs = 4
+ learningRate =0.15
+ regularization = 0.03
+loss=56.39222717285156	 accuracy= 0.1354999989271164
+
+
+ Hyper Parameters:
+ modelStructure =54
+ activationFunction = relu
+ numEpochs = 4
+ learningRate =0.125
+ regularization = 0.06
+loss=59.97142028808594	 accuracy= 0.12049999833106995
+
+//////////////////////////////////////
+
+80%
+
+///////////////////////////
+
+ Hyper Parameters:
+ modelStructure =54
+ activationFunction = relu
+ numEpochs = 4
+ learningRate =0.15
+ regularization = 0.03
+loss=55.26519012451172	 accuracy= 0.1185000017285347
+
+
+average generally higher with relu
+
+ Hyper Parameters:
+ modelStructure =57
+ activationFunction = relu
+ numEpochs = 4
+ learningRate =0.1
+ regularization = 0.09
+loss=55.17841339111328	 accuracy= 0.12250000238418579
+
+ Hyper Parameters:
+ modelStructure =57
+ activationFunction = relu
+ numEpochs = 4
+ learningRate =0.125
+ regularization = 0.03
+loss=56.3331184387207	 accuracy= 0.12399999797344208
+
+ Hyper Parameters:
+ modelStructure =57
+ activationFunction = relu
+ numEpochs = 4
+ learningRate =0.125
+ regularization = 0.09
+loss=55.81201934814453	 accuracy= 0.12200000137090683
+
+Hyper Parameters:
+ modelStructure =70
+ activationFunction = relu
+ numEpochs = 4
+ learningRate =0.15
+ regularization = 0.09
+loss=57.20701217651367	 accuracy= 0.12300000339746475
+
+ Hyper Parameters:
+ modelStructure =31
+ activationFunction = relu
+ numEpochs = 4
+ learningRate =0.1
+ regularization = 0.06
+loss=58.17388916015625	 accuracy= 0.12099999934434891
+
+ 
+ Hyper Parameters:
+ modelStructure =31
+ activationFunction = relu
+ numEpochs = 4
+ learningRate =0.1
+ regularization = 0.09
+loss=56.755435943603516	 accuracy= 0.12300000339746475
+
+/////////////////////////////
+
+85%
+
+/////////////////////
+
+
+ Hyper Parameters:
+ modelStructure =35
+ activationFunction = relu
+ numEpochs = 4
+ learningRate =0.15
+ regularization = 0.09
+loss=59.648624420166016	 accuracy= 0.12999999523162842
+
+ Hyper Parameters:
+ modelStructure =57
+ activationFunction = relu
+ numEpochs = 4
+ learningRate =0.1
+ regularization = 0.06
+loss=54.38871765136719	 accuracy= 0.12300000339746475
+
+
+ Hyper Parameters:
+ modelStructure =57
+ activationFunction = relu
+ numEpochs = 4
+ learningRate =0.15
+ regularization = 0.06
+loss=60.8172721862793	 accuracy= 0.11949999630451202
+
+
+ Hyper Parameters:
+ modelStructure =70
+ activationFunction = relu
+ numEpochs = 4
+ learningRate =0.125
+ regularization = 0.03
+loss=52.29014587402344	 accuracy= 0.12399999797344208
+
+
+ Hyper Parameters:
+ modelStructure =70
+ activationFunction = relu
+ numEpochs = 4
+ learningRate =0.15
+ regularization = 0.03
+loss=58.499900817871094	 accuracy= 0.12049999833106995
+
+
+Hyper Parameters:
+ modelStructure =50
+ activationFunction = relu
+ numEpochs = 4
+ learningRate =0.135
+ regularization = 0.06
+loss=59.819461822509766	 accuracy= 0.12250000238418579
+
+
+ Hyper Parameters:
+ modelStructure =57
+ activationFunction = relu
+ numEpochs = 4
+ learningRate =0.1
+ regularization = 0.06
+loss=56.773128509521484	 accuracy= 0.12150000035762787
+
+
+ Hyper Parameters:
+ modelStructure =57
+ activationFunction = relu
+ numEpochs = 4
+ learningRate =0.135
+ regularization = 0.03
+loss=53.50685501098633	 accuracy= 0.12999999523162842
+
+ Hyper Parameters:
+ modelStructure =70
+ activationFunction = relu
+ numEpochs = 4
+ learningRate =0.15
+ regularization = 0.09
+loss=59.852264404296875	 accuracy= 0.12449999898672104
+
+/////////////////////////////////
+
+80%
+
+//////////////////////////////
+
+ Hyper Parameters:
+ modelStructure =57
+ activationFunction = relu
+ numEpochs = 4
+ learningRate =0.125
+ regularization = 0.03
+loss=51.842872619628906	 accuracy= 0.125
+
+ Hyper Parameters:
+ modelStructure =64
+ activationFunction = relu
+ numEpochs = 4
+ learningRate =0.1
+ regularization = 0.09
+loss=56.22538375854492	 accuracy= 0.12049999833106995
+
+ Hyper Parameters:
+ modelStructure =50
+ activationFunction = relu
+ numEpochs = 4
+ learningRate =0.1
+ regularization = 0.09
+loss=56.871063232421875	 accuracy= 0.1264999955892563
+
+
+ Hyper Parameters:
+ modelStructure =50
+ activationFunction = relu
+ numEpochs = 4
+ learningRate =0.135
+ regularization = 0.03
+loss=55.30928421020508	 accuracy= 0.1264999955892563
+
+
+ Hyper Parameters:
+ modelStructure =57
+ activationFunction = relu
+ numEpochs = 4
+ learningRate =0.15
+ regularization = 0.06
+loss=55.1177978515625	 accuracy= 0.12049999833106995
+
+ 
+ Hyper Parameters:
+ modelStructure =57
+ activationFunction = relu
+ numEpochs = 4
+ learningRate =0.15
+ regularization = 0.09
+loss=58.32004928588867	 accuracy= 0.12049999833106995
+
+
+ Hyper Parameters:
+ modelStructure =64
+ activationFunction = relu
+ numEpochs = 4
+ learningRate =0.15
+ regularization = 0.06
+loss=55.40635681152344	 accuracy= 0.12200000137090683
+
+ Hyper Parameters:
+ modelStructure =70
+ activationFunction = relu
+ numEpochs = 4
+ learningRate =0.135
+ regularization = 0.03
+loss=54.89414978027344	 accuracy= 0.12049999833106995
+
+ Hyper Parameters:
+ modelStructure =50
+ activationFunction = relu
+ numEpochs = 4
+ learningRate =0.14
+ regularization = 0.06
+loss=58.987545013427734	 accuracy= 0.12449999898672104
+
+ Hyper Parameters:
+ modelStructure =50
+ activationFunction = relu
+ numEpochs = 4
+ learningRate =0.15
+ regularization = 0.09
+loss=58.71661376953125	 accuracy= 0.1289999932050705
+
+ Hyper Parameters:
+ modelStructure =64
+ activationFunction = relu
+ numEpochs = 4
+ learningRate =0.14
+ regularization = 0.06
+loss=55.839847564697266	 accuracy= 0.13600000739097595
+
+
+ 
+ Hyper Parameters:
+ modelStructure =64
+ activationFunction = relu
+ numEpochs = 4
+ learningRate =0.15
+ regularization = 0.03
+loss=54.45310974121094	 accuracy= 0.1289999932050705
+
+ Hyper Parameters:
+ modelStructure =70
+ activationFunction = relu
+ numEpochs = 4
+ learningRate =0.12
+ regularization = 0.09
+loss=58.48507308959961	 accuracy= 0.12200000137090683
+
+ Hyper Parameters:
+ modelStructure =70
+ activationFunction = relu
+ numEpochs = 4
+ learningRate =0.14
+ regularization = 0.03
+loss=54.69851303100586	 accuracy= 0.12049999833106995
